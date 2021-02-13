@@ -3,8 +3,19 @@
     <title>MWB</title>
     <script>
       function clicked() {
-        var d = document.getElementById('count');
+        var d = document.getElementById('count')
+
+        // Number() is used to convert string to a number.
+        // e.g Number('0') gives 0
         d.innerHTML = Number(d.innerHTML) + 1;
+
+        var number = Number(d.innerHTML);
+        var evenodd = document.getElementById('evenodd');
+        if (number % 2 == 0) {
+          evenodd.innerHTML =  'Even';
+        } else {
+          evenodd.innerHTML =  'Odd';
+        }
       }
     </script>
   </head>
@@ -12,9 +23,8 @@
     <h3>We are learning javascript</h3>
     <p>Count is</p>
     <p id='count'>0</p>
+    <p id='evenodd'></p>
     <button onclick="clicked()">Increase count</button>
-
-    <!-- Assignment: Try adding a decrease count button as well! -->
 
   </body>
 </html>

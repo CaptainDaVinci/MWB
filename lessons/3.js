@@ -55,7 +55,7 @@ var a = 5; // Assignment operator
 =  // Assignment, put right hand side value in left.
 
 
-// boolean operators: they return true or false.
+// comparative operators: they return true or false.
 == // equals
 != // not equals
 <  // less than

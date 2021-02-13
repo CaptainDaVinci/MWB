@@ -1,0 +1,67 @@
+// boolean operators,
+// AND, OR and NOT logic?
+
+what is boolean?
+- it is a true (correct, right) or a false (incorrect).
+
+
+// AND logic
+
+This returns true only if both are true otherwise it is false.
+
+x    |  y    | x AND y
+True   True     True
+True   False    False
+False  True     False
+False  False    False
+
+
+// OR logic
+
+This returns true if x or y is true, otherwise it is false.
+
+x    |  y    | x OR y
+True   True     True
+True   False    True
+False  True     True
+False  False    False
+
+
+// NOT logic
+It operator on only 1 value.
+
+x     |   NOT x
+True      False
+False     True
+
+
+// What are the symbols of these logics in JavaScript?
+1. AND logic: &&
+2. OR logic: ||
+3. NOT logic: !
+
+Examples.
+*
+var x = true, y = false;
+console.log(x && y); // false
+console.log(x || y); // true
+console.log(!x); // false
+console.log(!y); // true
+
+*
+var a = 5, b = 10, c = 20;
+console.log(a < b || c > b); // True
+// 5 < 10 || 20 > 10
+// true || true
+// true
+
+
+/*
+  Assignment: create a html page with 3 input fields for a, b and c with a button called "which is greatest?"
+  Description:
+  	After filling values for a, b and c and clicking the button "which is greatest?" the page should display the value
+    of the greatest among a, b and c.
+
+    e.g if user input value of a as 10, b as 20 and c as 30. After clicking the button "which is greatest?" the page should
+    display 30 (the value of c).
+*/
