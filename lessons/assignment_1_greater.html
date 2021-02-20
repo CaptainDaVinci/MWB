@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MWB Assignment</title>
+  <script>
+    console.log('Hello, world');
+
+    function onClick() {
+    	var a = document.getElementById('firstNumber');
+    	var b = document.getElementById('secondNumber');
+    	var c = document.getElementById('thirdNumber');
+
+
+      var firstNumber = Number(a.value);
+      var secondNumber = Number(b.value);
+      var thirdNumber = Number(c.value);
+
+      console.log(firstNumber);
+    	console.log(secondNumber);
+    	console.log(thirdNumber);
+
+      // if-else ladders
+      if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+      	console.log(firstNumber, 'is greatest');
+      } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+        console.log(secondNumber, 'is greatest');
+      } else {
+        console.log(thirdNumber, 'is greatest');
+      }
+    }
+  </script>
+</head>
+<body>
+	<h1>Bolean Operators</h1>
+<input id="firstNumber" type="text" value="5">
+  <input id="secondNumber" type="text" value="10">
+  <input id="thirdNumber" type="text" value="30">
+<button onClick="onClick()">Which is the greatest?</button>
+</body>
+</html>
